@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Creating an Object from a JSON String</h2>
+<p>Use the JavaScript function JSON.parse() to convert text into a JavaScript object</p>
+
+<p id="demo"></p>
+
+<script>
+const user = '{"name":"asmae", "age":21, "city":"T"}'
+const obj = JSON.parse(user);
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+</script>
+
+</body>
+</html>
